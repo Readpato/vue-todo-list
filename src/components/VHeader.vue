@@ -9,6 +9,8 @@ export default {
 
 <template>
   <nav>
-    <h2 class="text-white text-center text-2xl p-2">{{ title }}</h2>
+    <h2 class="text-white text-center text-2xl p-2 bg-red-500 rounded">
+      {{ title }}
+    </h2>
   </nav>
 </template>
