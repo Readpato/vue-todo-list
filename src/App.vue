@@ -1,5 +1,13 @@
-<script></script>
+<script>
+import VTodoContainer from "./components/VTodoContainer.vue";
+
+export default {
+  components: {
+    VTodoContainer,
+  },
+};
+</script>
 
 <template>
-  <h1>Here we go</h1>
+  <VTodoContainer />
 </template>
