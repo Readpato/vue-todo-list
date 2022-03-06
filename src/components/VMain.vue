@@ -7,9 +7,7 @@ export default {
 </script>
 
 <template>
-  <div
-    class="border-l-red-300 border-r-red-300 border-b-red-400 border-t-0 border rounded-b bg-red-100"
-  >
+  <div>
     <VForm />
   </div>
 </template>

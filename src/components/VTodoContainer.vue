@@ -9,8 +9,10 @@ export default {
 </script>
 
 <template>
-  <div class="w-4/5 md:w-1/2 h-auto mx-auto mt-10 rounded shadow-xl">
-    <VHeader title="Todo List App" />
+  <div
+    class="w-11/12 max-w-md h-72 mx-auto mt-8 rounded-2xl shadow-2xl bg-cardColor"
+  >
+    <VHeader title="My todo list!" />
     <VMain />
   </div>
 </template>

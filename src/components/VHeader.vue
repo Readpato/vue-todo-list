@@ -9,7 +9,7 @@ export default {
 
 <template>
   <nav>
-    <h2 class="text-white text-center text-2xl p-2 bg-red-500 rounded-t">
+    <h2 class="text-zinc-100 text-left font-medium text-2xl p-2 rounded-t ml-3">
       {{ title }}
     </h2>
   </nav>
