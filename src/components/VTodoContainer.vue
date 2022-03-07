@@ -10,9 +10,9 @@ export default {
 
 <template>
   <div
-    class="w-11/12 max-w-md h-72 mx-auto mt-8 rounded-2xl shadow-2xl bg-cardColor"
+    class="w-11/12 max-w-md pb-5 h-auto mx-auto mt-8 rounded-2xl shadow-2xl bg-cardColor"
   >
-    <VHeader title="My todo list!" />
+    <VHeader title="My tasks" />
     <VMain />
   </div>
 </template>
