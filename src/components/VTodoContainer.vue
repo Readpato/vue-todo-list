@@ -12,7 +12,7 @@ export default {
   <div
     class="w-11/12 max-w-md pb-5 h-auto mx-auto mt-8 rounded-2xl shadow-2xl bg-cardColor"
   >
-    <VHeader title="My tasks" />
+    <VHeader title="My todo" />
     <VMain />
   </div>
 </template>
