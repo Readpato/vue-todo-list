@@ -3,6 +3,9 @@ import { XIcon } from "@heroicons/vue/outline";
 export default {
   name: "VTaskList",
   components: { XIcon },
+  props: {
+    text: String,
+  },
 };
 </script>
 
@@ -17,7 +20,7 @@ export default {
         name="task-done"
         id="task-checkbox"
       />
-      <p class="text-white italic p-2">Study Tailwind</p>
+      <p class="text-white italic p-2">{{ text }}</p>
       <XIcon
         class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
       />

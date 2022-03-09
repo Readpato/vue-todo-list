@@ -32,7 +32,7 @@ export default {
           placeholder="Write here"
         />
         <PlusIcon
-          @click="$emit('createNewTask', newTask)"
+          @click="$emit('createNewTask', newTask, $event)"
           class="w-6 max-h-6 self-center ml-2 h-auto text-white hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
         />
       </div>

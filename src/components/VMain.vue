@@ -5,9 +5,14 @@ import VTodoList from "./VTodoList.vue";
 export default {
   name: "VMain",
   components: { VForm, VTodoList },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
   methods: {
-    logEmit(newTask) {
-      console.log(newTask);
+    addNewTask(task) {
+      this.tasks.push({ text: task, id: Date.now() });
     },
   },
 };
@@ -15,10 +20,10 @@ export default {
 
 <template>
   <div class="space-y-3">
-    <VForm @create-new-task="logEmit" />
+    <VForm @create-new-task="addNewTask" />
     <h3 class="text-zinc-400 text-center font-medium w-11/12 mx-auto">
       Today tasks
     </h3>
-    <VTodoList />
+    <VTodoList v-for="task in tasks" :text="task.text" :key="task.id" />
   </div>
 </template>
