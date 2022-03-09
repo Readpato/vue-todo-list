@@ -8,8 +8,8 @@ export default {
 </script>
 
 <template>
-  <nav>
-    <h2 class="text-white text-center text-2xl p-2 bg-red-500 rounded">
+  <nav class="w-11/12 mx-auto mb-1">
+    <h2 class="text-zinc-100 text-center font-medium text-2xl p-2">
       {{ title }}
     </h2>
   </nav>
