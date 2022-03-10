@@ -10,6 +10,12 @@ export default {
       newTask: "",
     };
   },
+  methods: {
+    emitNewTask() {
+      this.$emit("createNewTask", this.newTask);
+      this.newTask = "";
+    },
+  },
 };
 </script>
 
@@ -24,7 +30,7 @@ export default {
       >
       <div class="flex justify-between">
         <input
-          @keyup.enter="$emit('createNewTask', newTask)"
+          @keyup.enter="emitNewTask"
           v-model="newTask"
           id="new-task"
           type="text"
@@ -32,7 +38,7 @@ export default {
           placeholder="Write here"
         />
         <PlusIcon
-          @click="$emit('createNewTask', newTask, $event)"
+          @click="emitNewTask"
           class="w-6 max-h-6 self-center ml-2 h-auto text-white hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
         />
       </div>
