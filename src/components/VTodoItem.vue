@@ -34,7 +34,14 @@ export default {
       name="task-done"
       id="task-checkbox"
     />
-    <p :class="{ 'line-through': isCompleted }" class="text-white italic p-2">
+    <p
+      :class="{
+        'line-through': isCompleted,
+        'decoration-inputColor': isCompleted,
+        'decoration-2': isCompleted,
+      }"
+      class="text-white p-2"
+    >
       {{ task }}
     </p>
     <XIcon
