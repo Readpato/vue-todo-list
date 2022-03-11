@@ -12,8 +12,11 @@ export default {
   },
   methods: {
     createNewTask(newTask) {
-      this.tasks.push({ task: newTask, id: Date.now() });
+      this.tasks.push({ task: newTask });
       console.log(this.tasks);
+    },
+    deleteTask(taskIndex) {
+      this.tasks.splice(taskIndex, 1);
     },
   },
   computed: {
@@ -30,10 +33,11 @@ export default {
   <VHeader title="Today tasks" />
   <ul class="w-11/12 mx-auto space-y-2 flex flex-col" v-if="activeTasks">
     <VTodoItem
+      @emit-delete-task="deleteTask"
       v-for="(task, index) in this.tasks"
       :task="task.task"
       :key="index"
-      :id="task.id"
+      :id="index"
     />
   </ul>
   <VTodoEmptyItem v-else />

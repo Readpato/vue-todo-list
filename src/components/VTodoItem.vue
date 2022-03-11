@@ -4,14 +4,15 @@ import { XIcon } from "@heroicons/vue/outline";
 export default {
   name: "VTodoItem",
   components: { XIcon },
+  emits: ["emitDeleteTask"],
   data() {
     return {
       isCompleted: false,
     };
   },
   methods: {
-    deleteTask() {
-      console.log("Hello");
+    emitDeleteTask() {
+      this.$emit("emitDeleteTask", this.id);
     },
   },
   props: {
@@ -37,7 +38,7 @@ export default {
       {{ task }}
     </p>
     <XIcon
-      @click="deleteTask"
+      @click="emitDeleteTask"
       class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
     />
   </div>
