@@ -11,7 +11,8 @@ export default {
     };
   },
   methods: {
-    logTasks() {
+    createNewTask(newTask) {
+      this.tasks.push({ task: newTask, id: Date.now() });
       console.log(this.tasks);
     },
   },
@@ -25,10 +26,15 @@ export default {
 </script>
 
 <template>
-  <VForm />
+  <VForm @emit-new-task="createNewTask" />
   <VHeader title="Today tasks" />
-  <ul class="task-list w-11/12 mx-auto space-y-2 flex flex-col">
-    <VTodoItem v-if="activeTasks" />
-    <VTodoEmptyItem v-else />
+  <ul class="w-11/12 mx-auto space-y-2 flex flex-col" v-if="activeTasks">
+    <VTodoItem
+      v-for="(task, index) in this.tasks"
+      :task="task.task"
+      :key="index"
+      :id="task.id"
+    />
   </ul>
+  <VTodoEmptyItem v-else />
 </template>

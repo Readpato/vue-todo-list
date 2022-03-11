@@ -4,7 +4,7 @@ import { PlusIcon } from "@heroicons/vue/outline";
 export default {
   name: "VForm",
   components: { PlusIcon },
-  emits: ["createNewTask"],
+  emits: ["emitNewTask"],
   data() {
     return {
       newTask: "",
@@ -12,8 +12,11 @@ export default {
   },
   methods: {
     emitNewTask() {
-      this.$emit("createNewTask", this.newTask);
-      this.newTask = "";
+      if (this.newTask) {
+        this.$emit("emitNewTask", this.newTask);
+        this.newTask = "";
+      }
+      return;
     },
   },
 };

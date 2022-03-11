@@ -14,11 +14,16 @@ export default {
       console.log("Hello");
     },
   },
+  props: {
+    task: String,
+    id: Number,
+  },
 };
 </script>
 
 <template>
   <div
+    :id="id"
     class="flex justify-between space-x-1 bg-bubbleColor p-3 rounded-2xl h-auto"
   >
     <input
@@ -28,10 +33,9 @@ export default {
       name="task-done"
       id="task-checkbox"
     />
-    <p
-      :class="{ 'line-through': isCompleted }"
-      class="text-white italic p-2"
-    ></p>
+    <p :class="{ 'line-through': isCompleted }" class="text-white italic p-2">
+      {{ task }}
+    </p>
     <XIcon
       @click="deleteTask"
       class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
