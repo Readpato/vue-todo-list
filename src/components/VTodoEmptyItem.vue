@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <ul class="w-11/12 mx-auto space-y-2 flex flex-col">
+  <ul class="w-11/12 mx-auto space-y-2 flex flex-col shadow-2xl">
     <div
       class="flex justify-between space-x-1 bg-bubbleColor p-3 rounded-2xl h-auto"
     >
