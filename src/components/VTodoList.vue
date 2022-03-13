@@ -23,6 +23,9 @@ export default {
       this.tasks = storedTasks;
     },
     deleteTask(taskIndex) {
+      let storedTasks = JSON.parse(localStorage.getItem("storedTasks"));
+      storedTasks.splice(taskIndex, 1);
+      localStorage.setItem("storedTasks", JSON.stringify(storedTasks));
       this.tasks.splice(taskIndex, 1);
     },
     getStoredTasks() {
@@ -46,7 +49,7 @@ export default {
       @emit-delete-task="deleteTask"
       v-for="(task, index) in this.tasks"
       :task="task.task"
-      :key="index"
+      :key="task.key"
       :id="index"
     />
   </ul>
