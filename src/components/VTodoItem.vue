@@ -25,7 +25,7 @@ export default {
 <template>
   <div
     :id="id"
-    class="flex justify-between space-x-1 bg-bubbleColor p-3 rounded-2xl h-auto"
+    class="flex justify-between space-x-1 bg-bubbleColor p-3 rounded-2xl h-auto shadow-2xl"
   >
     <input
       @click="isCompleted = !isCompleted"
@@ -46,7 +46,7 @@ export default {
     </p>
     <XIcon
       @click="emitDeleteTask"
-      class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
+      class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1 hover:rotate-90 transition-all duration-500"
     />
   </div>
 </template>

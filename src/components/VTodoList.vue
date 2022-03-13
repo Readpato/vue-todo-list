@@ -4,7 +4,7 @@ import VHeader from "./VHeader.vue";
 import VTodoItem from "./VTodoItem.vue";
 import VTodoEmptyItem from "./VTodoEmptyItem.vue";
 export default {
-  name: "VTaskList",
+  name: "VTodoList",
   data() {
     return {
       tasks: [],
@@ -29,7 +29,8 @@ export default {
       this.tasks.splice(taskIndex, 1);
     },
     getStoredTasks() {
-      let storedTasks = JSON.parse(localStorage.getItem("storedTasks"));
+      let storedTasks = [];
+      storedTasks = JSON.parse(localStorage.getItem("storedTasks")) || [];
       this.tasks = storedTasks;
     },
   },

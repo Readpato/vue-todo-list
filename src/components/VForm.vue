@@ -37,12 +37,12 @@ export default {
           v-model="newTask"
           id="new-task"
           type="text"
-          class="p-2 w-11/12 mr-1 outline outline-white outline-1 rounded bg-bubbleColor text-white placeholder:italic placeholder:text-textColor focus:outline-none focus:ring-2 focus:ring-inputColor"
+          class="p-2 w-11/12 mr-1 outline outline-white outline-1 rounded bg-bubbleColor text-white placeholder:italic placeholder:text-textColor focus:outline-none focus:ring-2 focus:ring-inputColor transition-colors"
           placeholder="Write here"
         />
         <PlusIcon
           @click="emitNewTask"
-          class="w-6 max-h-6 self-center ml-2 h-auto text-white hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1"
+          class="w-6 max-h-6 self-center shrink-0 ml-2 h-auto text-white hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1 hover:rotate-90 transition-all duration-500"
         />
       </div>
     </div>
