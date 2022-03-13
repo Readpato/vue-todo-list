@@ -29,7 +29,8 @@ export default {
       this.tasks.splice(taskIndex, 1);
     },
     getStoredTasks() {
-      console.log("I've been created");
+      let storedTasks = JSON.parse(localStorage.getItem("storedTasks"));
+      this.tasks = storedTasks;
     },
   },
   computed: {
