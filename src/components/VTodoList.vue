@@ -10,13 +10,23 @@ export default {
       tasks: [],
     };
   },
+  created() {
+    this.getStoredTasks();
+  },
   methods: {
     createNewTask(newTask) {
-      this.tasks.push({ task: newTask });
-      console.log(this.tasks);
+      let newKey = Date.now();
+      let storedTasks = [];
+      storedTasks = JSON.parse(localStorage.getItem("storedTasks")) || [];
+      storedTasks.push({ task: newTask, key: newKey });
+      localStorage.setItem("storedTasks", JSON.stringify(storedTasks));
+      this.tasks = storedTasks;
     },
     deleteTask(taskIndex) {
       this.tasks.splice(taskIndex, 1);
+    },
+    getStoredTasks() {
+      console.log("I've been created");
     },
   },
   computed: {
