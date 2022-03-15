@@ -1,48 +1,97 @@
-# vue-todo-list
+# Vue Todo List
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+The oldie but goldie Todo List but this time with Vue!
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+Try it here: <a href="https://readpato.github.io/vue-todo-list/">Demo</a>
 
-## Customize configuration
+### Technologies Used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+For this project the technologies and tools used were:
 
-## Project Setup
+- Vue
+- Tailwind CSS
+- Vite
+- Vitest
+- NPM
+- Cypress
 
-```sh
+#
+
+## Installation
+
+As this project runs with Vue and Cypress you will have to have NPM or Yarn similar and then run this little code snippet on the CLI.
+
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+This will allow to download the dependencies you need to run the Todo List properly.
 
-```sh
-npm run dev
-```
+#
 
-### Compile and Minify for Production
+## Utilization
 
-```sh
-npm run build
-```
+The Todo List allows you to save your pending activities on a list!
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Simply write a task on the input field and then either click the plus or hit enter on your keyboard and bam! A new task has been created.
 
-```sh
-npm run test:unit
-```
+<img  src="" align="center">
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+If the checkbox on the left is clicked the user will be able to style the text of the task with a strikethrough!
 
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+<img  src="" align="center">
 
-### Lint with [ESLint](https://eslint.org/)
+If the user desires to eliminate a task it can simply click the 'X' icon to the right of the task field and delete it!
 
-```sh
-npm run lint
-```
+<img  src="" align="center">
+
+When there are no more tasks in the task list, a field displaying "No tasks for now!" will appear.
+
+<img  src="" align="center">
+
+#
+
+## Challenges Faced
+
+- Using Vue.js for the first time!
+
+#
+
+## What I learned
+
+- Being the first time using a major framework, I learned that documentation is really important. If it's good redacted, it will help the consumer to understand concepts way faster.
+
+- Creation of Vue components named Single File Components (SFC) that encapsulates JavaScript(the logic), HTML(the template) and CSS(the style).
+
+- How to create an app instance, text interpolation (using the Mustache syntax), directive bindings as v-bind, v-on and their respective users.
+
+- How to use the Vue Developer Tools and Vue CLI.
+
+- Installing SASS as a global module to be of use for all the components of the application.
+
+#
+
+## Support
+
+If some error should appear, you can contact me through:
+
+- Twitter: @patoraedler
+- Email: patoraedler@gmail.com
+
+#
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate :)
+
+#
+
+## Author
+
+Patrick Raedler.
+
+#
