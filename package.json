@@ -6,8 +6,8 @@
     "build": "vite build",
     "preview": "vite preview --port 5050",
     "test:unit": "vitest --environment jsdom",
-    "test:e2e": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress open'",
-    "test:e2e:ci": "start-server-and-test preview http://127.0.0.1:5050/ 'cypress run'",
+    "test:e2e": "start-server-and-test preview http://localhost:5050/vue-todo-list/ 'cypress open'",
+    "test:e2e:ci": "start-server-and-test preview http://localhost:5050/vue-todo-list/ 'cypress run'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "deploy": "sh deploy.sh",
     "cy:open": "cypress open"
@@ -17,6 +17,8 @@
     "vue": "^3.2.31"
   },
   "devDependencies": {
+    "@cypress/vite-dev-server": "^2.2.2",
+    "@cypress/vue": "^3.1.1",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-vue": "^2.2.2",
     "@vue/eslint-config-prettier": "^7.0.0",
