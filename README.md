@@ -14,14 +14,14 @@ For this project the technologies and tools used were:
 - Tailwind CSS
 - Vite
 - Vitest
-- NPM
 - Cypress
+- NPM
 
 #
 
 ## Installation
 
-As this project runs with Vue and Cypress you will have to have NPM or Yarn similar and then run this little code snippet on the CLI.
+As this project runs with Vue and Cypress you will have to have NPM or yarn and then run this little code snippet on the CLI.
 
 ```
 npm install
@@ -55,21 +55,29 @@ When there are no more tasks in the task list, a field displaying "No tasks for 
 
 ## Challenges Faced
 
-- Using Vue.js for the first time!
+- Utilizing different Vue concepts to create a fully reactive web application.
+
+- Learning the Tailwind utility classes.
+
+- Using local storage to keep the data for the next time the user enters the webpage.
 
 #
 
 ## What I learned
 
-- Being the first time using a major framework, I learned that documentation is really important. If it's good redacted, it will help the consumer to understand concepts way faster.
+- Being this the first app that I code by myself I have acquired lot of knowledge:
 
-- Creation of Vue components named Single File Components (SFC) that encapsulates JavaScript(the logic), HTML(the template) and CSS(the style).
+  - Creating a Vue app which is going to be divided into children components. It's always better to design how the structure of the app is going to be so you can have an idea of it.
 
-- How to create an app instance, text interpolation (using the Mustache syntax), directive bindings as v-bind, v-on and their respective users.
+  - Vue directives and reactivity fundamentals that let you connect the data that will change throughout the application and keep the state of it.
 
-- How to use the Vue Developer Tools and Vue CLI.
+  - Events go up, props go down. Basically events that happen are emitted from a child component and are sent upwards and then another child component that belongs to the original parent component can pass down that information as props!
 
-- Installing SASS as a global module to be of use for all the components of the application.
+  - Options API is pretty easy to understand if you want to start learning Vue, but I am definetly going to try the composition API!
+
+- Tailwind CSS utility classes are pretty useful to design an app. With a good foundation on vanilla CSS it can be really easy to bring an up to it's feet design-wise!
+
+- Vite is an optimal building tool. The time that it took each time to load my app was incredibly fast.
 
 #
 
