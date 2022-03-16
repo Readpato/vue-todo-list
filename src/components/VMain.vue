@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="space-y-3">
+  <main class="space-y-3">
     <VTodoList />
-  </div>
+  </main>
 </template>

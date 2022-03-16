@@ -4,11 +4,6 @@
 import { mount } from "@cypress/vue";
 import VForm from "./VForm.vue";
 
-it("Playground", () => {
-  mount(VForm);
-  cy.get("label").should("contain", "Create new task");
-});
-
 it("Type new task and emit it to parent element ", () => {
   mount(VForm);
   const newTask = "Master Vue and Cypress!";
