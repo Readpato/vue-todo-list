@@ -37,19 +37,23 @@ The Todo List allows you to save your pending activities on a list!
 
 Simply write a task on the input field and then either click the plus or hit enter on your keyboard and bam! A new task has been created.
 
-<img  src="" align="center">
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-1.png" align="center">
+
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-2.png" align="center">
 
 If the checkbox on the left is clicked the user will be able to style the text of the task with a strikethrough!
 
-<img  src="" align="center">
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-5.png" align="center">
 
 If the user desires to eliminate a task it can simply click the 'X' icon to the right of the task field and delete it!
 
-<img  src="" align="center">
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-3.png" align="center">
+
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-4.png" align="center">
 
 When there are no more tasks in the task list, a field displaying "No tasks for now!" will appear.
 
-<img  src="" align="center">
+<img  src="https://github.com/Readpato/vue-todo-list/blob/master/src/docu-images/todo-image-6.png" align="center">
 
 #
 
