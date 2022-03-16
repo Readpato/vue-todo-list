@@ -1,48 +1,105 @@
-# vue-todo-list
+# Vue Todo List
 
-This template should help get you started developing with Vue 3 in Vite.
+## Description
 
-## Recommended IDE Setup
+The oldie but goldie Todo List but this time with Vue!
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+Try it here: <a href="https://readpato.github.io/vue-todo-list/">Demo</a>
 
-## Customize configuration
+### Technologies Used
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+For this project the technologies and tools used were:
 
-## Project Setup
+- Vue
+- Tailwind CSS
+- Vite
+- Vitest
+- Cypress
+- NPM
 
-```sh
+#
+
+## Installation
+
+As this project runs with Vue and Cypress you will have to have NPM or yarn and then run this little code snippet on the CLI.
+
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+This will allow to download the dependencies you need to run the Todo List properly.
 
-```sh
-npm run dev
-```
+#
 
-### Compile and Minify for Production
+## Utilization
 
-```sh
-npm run build
-```
+The Todo List allows you to save your pending activities on a list!
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Simply write a task on the input field and then either click the plus or hit enter on your keyboard and bam! A new task has been created.
 
-```sh
-npm run test:unit
-```
+<img  src="" align="center">
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
+If the checkbox on the left is clicked the user will be able to style the text of the task with a strikethrough!
 
-```sh
-npm run build
-npm run test:e2e # or `npm run test:e2e:ci` for headless testing
-```
+<img  src="" align="center">
 
-### Lint with [ESLint](https://eslint.org/)
+If the user desires to eliminate a task it can simply click the 'X' icon to the right of the task field and delete it!
 
-```sh
-npm run lint
-```
+<img  src="" align="center">
+
+When there are no more tasks in the task list, a field displaying "No tasks for now!" will appear.
+
+<img  src="" align="center">
+
+#
+
+## Challenges Faced
+
+- Utilizing different Vue concepts to create a fully reactive web application.
+
+- Learning the Tailwind utility classes.
+
+- Using local storage to keep the data for the next time the user enters the webpage.
+
+#
+
+## What I learned
+
+- Being this the first app that I code by myself I have acquired lot of knowledge:
+
+  - Creating a Vue app which is going to be divided into children components. It's always better to design how the structure of the app is going to be so you can have an idea of it.
+
+  - Vue directives and reactivity fundamentals that let you connect the data that will change throughout the application and keep the state of it.
+
+  - Events go up, props go down. Basically events that happen are emitted from a child component and are sent upwards and then another child component that belongs to the original parent component can pass down that information as props!
+
+  - Options API is pretty easy to understand if you want to start learning Vue, but I am definetly going to try the composition API!
+
+- Tailwind CSS utility classes are pretty useful to design an app. With a good foundation on vanilla CSS it can be really easy to bring an up to it's feet design-wise!
+
+- Vite is an optimal building tool. The time that it took each time to load my app was incredibly fast.
+
+#
+
+## Support
+
+If some error should appear, you can contact me through:
+
+- Twitter: @patoraedler
+- Email: patoraedler@gmail.com
+
+#
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate :)
+
+#
+
+## Author
+
+Patrick Raedler.
+
+#
