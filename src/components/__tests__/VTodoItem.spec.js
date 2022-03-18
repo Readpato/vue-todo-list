@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { mount } from "@cypress/vue";
-import VTodoItem from "./VTodoItem.vue";
+import VTodoItem from "../VTodoItem.vue";
 
 it("Recieve a task prop in string and display it", () => {
   mount(VTodoItem, {

@@ -2,7 +2,7 @@
 /// <reference types="cypress" />
 
 import { mount } from "@cypress/vue";
-import VForm from "./VForm.vue";
+import VForm from "../VForm.vue";
 
 it("Type new task and emit it to parent element ", () => {
   mount(VForm);
