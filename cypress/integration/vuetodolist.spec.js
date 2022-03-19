@@ -47,7 +47,7 @@ context("Todo List", () => {
       cy.get("li").eq(0).should("exist").and("contain", `${firstTask}`);
       cy.get("li").eq(1).should("exist").and("contain", `${secondTask}`);
     });
-    it("Delete one of the existing tasks and the other will remain", () => {
+    it("Delete one of the existing tasks and the assess that the other tasks remain", () => {
       const firstTask = "Write Cypress tests";
       const secondTask = "Master Vue!";
       const thirdTask = "Become a fulltime developer!";
@@ -78,6 +78,29 @@ context("Todo List", () => {
         });
         expect(newTasks).to.not.include(firstTask);
       });
+    });
+    it("Creates tasks and reloads page to assure that task are kept in localStorage", () => {
+      const firstTask = "Write Cypress tests";
+      const secondTask = "Master Vue!";
+      const thirdTask = "Become a fulltime developer!";
+      cy.get("form input").type(firstTask);
+      cy.get("form svg").click();
+      cy.get("form input").should("have.value", "");
+      cy.get("form input").type(secondTask);
+      cy.get("form svg").click();
+      cy.get("form input").should("have.value", "");
+      cy.get("form input").type(thirdTask);
+      cy.get("form svg").click();
+      cy.get("form input").should("have.value", "");
+      cy.get("li").should("have.length", "3");
+      cy.get("li").eq(0).should("exist").and("contain", `${firstTask}`);
+      cy.get("li").eq(1).should("exist").and("contain", `${secondTask}`);
+      cy.get("li").eq(2).should("exist").and("contain", `${thirdTask}`);
+      cy.reload();
+      cy.get("li").should("have.length", "3");
+      cy.get("li").eq(0).should("exist").and("contain", `${firstTask}`);
+      cy.get("li").eq(1).should("exist").and("contain", `${secondTask}`);
+      cy.get("li").eq(2).should("exist").and("contain", `${thirdTask}`);
     });
   });
 });
