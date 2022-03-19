@@ -6,13 +6,13 @@ it("Recieve a task prop in string and display it", () => {
   mount(VTodoItem, {
     props: { task: "New task recieved!", id: Math.random() },
   });
-  cy.get("p").should("contain", "New task recieved!");
+  cy.get("li").should("contain", "New task recieved!");
 });
 
 it("Strikes through the text when checkbox is clicked", () => {
   mount(VTodoItem, { props: { task: "New Task!", id: Math.random() } });
   cy.get("input:checkbox").click();
-  cy.get("p").should("have.class", "line-through");
+  cy.get("li").should("have.class", "line-through");
 });
 
 it("Emits the delete task event when the 'X' icon is clicked", () => {

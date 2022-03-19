@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { mount } from "@cypress/vue";
-import VTodoEmptyItem from "./VTodoEmptyItem.vue";
+import VTodoEmptyItem from "../VTodoEmptyItem.vue";
 
 it("Mounts and displays the correct text", () => {
   mount(VTodoEmptyItem);
