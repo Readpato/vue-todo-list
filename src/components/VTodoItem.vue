@@ -34,7 +34,7 @@ export default {
       name="task-done"
       id="task-checkbox"
     />
-    <p
+    <li
       :class="{
         'line-through': isCompleted,
         'decoration-inputColor': isCompleted,
@@ -43,7 +43,7 @@ export default {
       class="text-white p-2"
     >
       {{ task }}
-    </p>
+    </li>
     <XIcon
       @click="emitDeleteTask"
       class="w-6 max-h-6 self-center text-white flex-shrink-0 hover:text-white hover:bg-inputColor hover:rounded-full hover:cursor-pointer hover:ring-white hover:ring-1 hover:rotate-90 transition-all duration-500"

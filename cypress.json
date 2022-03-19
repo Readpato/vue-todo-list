@@ -1,3 +1,13 @@
 {
-  "baseUrl": "http://localhost:5050"
+  "baseUrl": "http://localhost:5050",
+  "component": {
+    "componentFolder": "src",
+    "testFiles": "**/*spec.{js,jsx,ts,tsx}",
+    "viewportHeight": 500,
+    "viewportWidth": 700,
+    "supportFile": "cypress/support/component.js"
+  },
+  "e2e": {
+    "supportFile": "cypress/support/e2e.js"
+  }
 }
