@@ -79,7 +79,7 @@ When there are no more tasks in the task list, a field displaying "No tasks for 
 
   - Options API is pretty easy to understand if you want to start learning Vue, but I am definetly going to try the composition API!
 
-- Tailwind CSS utility classes are pretty useful to design an app. With a good foundation on vanilla CSS it can be really easy to bring an up to it's feet design-wise!
+- Tailwind CSS utility classes are pretty useful to design an app. With a good foundation on vanilla CSS it can be really easy to bring a project up to it's feet design-wise!
 
 - Vite is an optimal building tool. The time that it took each time to load my app was incredibly fast.
 
